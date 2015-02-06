@@ -4,7 +4,7 @@ Quick instructions:
 
 ```bash
 CID=$(docker run -d --privileged -p 22:1194/udp -p 443:443/tcp maccam912/dockvpn22)
-docker run -t -i -p 443:8080 --volumes-from $CID maccam912/dockvpn22 serveconfig
+docker run -t -i -p 8080:8080 --volumes-from $CID maccam912/dockvpn22 serveconfig
 ```
 
 Now download the file located at the indicated URL. You will get a
