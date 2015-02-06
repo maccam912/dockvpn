@@ -3,8 +3,8 @@
 Quick instructions:
 
 ```bash
-CID=$(docker run -d --privileged -p 22:1194/udp -p 443:443/tcp maccam912/openvpn)
-docker run -t -i -p 80:8080 --volumes-from $CID maccam912/openvpn serveconfig
+CID=$(docker run -d --privileged -p 22:1194/udp -p 443:443/tcp maccam912/openvpn22)
+docker run -t -i -p 80:8080 --volumes-from $CID maccam912/openvpn22 serveconfig
 ```
 
 Now download the file located at the indicated URL. You will get a
