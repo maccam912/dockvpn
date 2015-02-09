@@ -84,7 +84,7 @@ redirect-gateway def1
 </dh>
 
 <connection>
-remote $MY_IP_ADDR 22 udp
+remote $MY_IP_ADDR 80 udp
 </connection>
 
 <connection>
